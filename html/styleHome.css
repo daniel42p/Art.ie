@@ -1,0 +1,26 @@
+.banner {
+    height: 120vh;
+    background-image: url("fundo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner {
+    margin-top: 0vh;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome{
+    font-size: 10vh;
+    text-align: left;
+    width: 70vw;
+    color: #f5b349;
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
