@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styleLogin.css">
+    <link rel="stylesheet" href="styleListas.css">
     <link rel="stylesheet" href="styleFooter.css">
     <link rel="stylesheet" href="styleHeader.css">
 </head>
@@ -24,23 +24,37 @@
             </ul>
         </div>
     </div>
-    <div class="main-login">
-        <div class="left-login">
-            <h1>Faça login<br>E faça parte da Sétima Arte.</h1>
-            <img src="fantasma.svg" alt="" class="left-login-image">
-        </div>
-        <div class="right-login">
-            <div class="card-login">
-                <div class="textfield">
-                    <label for="usuario">Usuário ou Email</label>
-                    <input type="text" name="usuario" placeholder="Usuário ou Email">
-                </div>
-                <div class="textfield">
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha" placeholder="Senha">
-                </div>
-                <button class="btn-login">Login</button>
+    <div class="content">
+        <div class="slides">
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+            <input type="radio" name="slide" id="slide4">
+            <input type="radio" name="slide" id="slide5">
+
+            <div class="slide s1">
+                <img src="./images/1.jpg" alt="">
             </div>
+            <div class="slide">
+                <img src="./images/2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./images/3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./images/4.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./images/5.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="navigation">
+            <label class="bar" for="slide1"></label>
+            <label class="bar" for="slide2"></label>
+            <label class="bar" for="slide3"></label>
+            <label class="bar" for="slide4"></label>
+            <label class="bar" for="slide5"></label>
         </div>
     </div>
     <footer>
