@@ -3,7 +3,7 @@ body {
     padding: 0;
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(72deg, #3debb0 1%, #8956f3 99%);
+    background: linear-gradient(72deg, #11173f 1%, #11173f 99%);
 }
 
 .content {
@@ -38,6 +38,7 @@ body {
 .bar:hover {
     background-color: #fff;
 }
+
 
 input {
     display: none;
