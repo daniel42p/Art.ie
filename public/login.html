@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styleLogin.css">
+    <link rel="stylesheet" href="css/styleFooter.css">
+    <link rel="stylesheet" href="css/styleHeader.css">
+</head>
+<body>
+    <div class="header">
+        <div class="conteiner">
+            <img src="css/ART.IE.svg" alt="" class="logo">
+            
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="listas.html">LISTAS</a></li>
+                <li><a>SOBRE</a></li>
+                <li>|</li>
+                <li><a href="cadastro.html">CADASTRO</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Faça login<br>E faça parte da Sétima Arte.</h1>
+            <img src="css/fantasma.svg" alt="" class="left-login-image">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <div class="textfield">
+                    <label for="usuario">Usuário ou Email</label>
+                    <input type="text" id="email_input" placeholder=" Email">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha_input" placeholder="Senha">
+                </div>
+                <button onclick="entrar()" class="btn-login">Login</button>
+                <div id="div_aguardar" class="loading-div" style="display: none";>
+                    <img src="css/circle-loading.gif" id="loading-gif">
+                </div>
+
+                <div id="div_erros_login">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="rodape">
+            
+            <div class="escritarodape">
+                <div class="endereço">
+                    <h2>Endereço</h2>
+                    <h5>ART.IE</h5>
+                    <h5>Rua Haddock Lobo, 595</h5>
+                    <h5>Jardim Paulista - São Paulo SP</h5>
+                    <h5>CEP 05001-200</h5>
+                </div>
+
+                <div class="contato">
+                    <h2>Contato</h2>
+                    <h5>Telefone: 9999-9999</h5>
+                    <h5>WhatsApp: +55 (11) 3003-1999</h5>
+                    <h5>E-mail: artie.sptech@gmail.com</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>
+
+
+    function entrar() {
+        aguardar();
+
+        var emailVar = email_input.value;
+        var senhaVar = senha_input.value;
+
+        if (emailVar == "" || senhaVar == "") {
+            cardErro.style.display = "block"
+            mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+            finalizarAguardar();
+            return false;
+        }
+        else {
+            setInterval(sumirMensagem, 5000)
+        }
+
+        console.log("FORM LOGIN: ", emailVar);
+        console.log("FORM SENHA: ", senhaVar);
+
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        }).then(function (resposta) {
+            console.log("ESTOU NO THEN DO entrar()!")
+
+            if (resposta.ok) {
+                console.log(resposta);
+
+                resposta.json().then(json => {
+                    console.log(json);
+                    console.log(JSON.stringify(json));
+
+                    sessionStorage.EMAIL_USUARIO = json.email;
+                    sessionStorage.NOME_USUARIO = json.nome;
+                    sessionStorage.ID_USUARIO = json.id;
+
+                    setTimeout(function () {
+                        window.location = "ALTERE AQUI";
+                    }, 1000); // apenas para exibir o loading
+
+                });
+
+            } else {
+
+                console.log("Houve um erro ao tentar realizar o login!");
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    finalizarAguardar(texto);
+                });
+            }
+
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+
+        return false;
+    }
+
+    function sumirMensagem() {
+        cardErro.style.display = "none"
+    }
+
+</script>

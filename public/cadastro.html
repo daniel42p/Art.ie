@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styleLogin.css">
+    <link rel="stylesheet" href="css/styleFooter.css">
+    <link rel="stylesheet" href="css/styleHeader.css">
+    <script src="./js/funcoes.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="conteiner">
+            <img src="css/ART.IE.svg" alt="" class="logo">
+            
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="listas.html">LISTAS</a></li>
+                <li><a>SOBRE</a></li>
+                <li>|</li>
+                <li><a href="cadastro.html">CADASTRO</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Faça parte do Cinema</h1>
+            <img src="css/casalfilme.svg" alt="" class="left-login-image">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" id="nome_input" placeholder="Usuário">
+                </div>
+                <div class="textfield">
+                    <label for="filme">Genero de filme Favorito</label>
+                    <select name="" id="slt_genero">
+                        <option value="0">-- selecione --</option>
+                        <option value="1">Ação</option>
+                        <option value="2">Aventura</option>
+                        <option value="3">Comédia</option>
+                        <option value="4">Fantasia</option>
+                        <option value="5">Ficção Científica</option>
+                        <option value="6">Romance</option>
+                        <option value="7">Suspense</option>
+                        <option value="8">Terror</option>
+                    </select>
+                </div>
+                <div class="textfield">
+                    <label for="email">Email</label>
+                    <input type="text" id="email_input" placeholder="Email">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha_input" placeholder="Senha">
+                </div>
+                <div class="textfield">
+                    <label for="cfsenha">Confirmar Senha</label>
+                    <input type="password" id="confirmacao_senha_input" placeholder="Confirma Senha">
+                </div>
+                <button onclick="cadastrar()" class="btn-login">Cadastrar</button>
+                <div id="div_aguardar" class="loading-div" style="display: none";>
+                <img src="css/circle-loading.gif" id="loading-gif">
+            </div>
+            </div>
+
+            <div id="div_erros_login">
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="rodape">
+            
+            <div class="escritarodape">
+                <div class="endereço">
+                    <h2>Endereço</h2>
+                    <h5>ART.IE</h5>
+                    <h5>Rua Haddock Lobo, 595</h5>
+                    <h5>Jardim Paulista - São Paulo SP</h5>
+                    <h5>CEP 05001-200</h5>
+                </div>
+
+                <div class="contato">
+                    <h2>Contato</h2>
+                    <h5>Telefone: 9999-9999</h5>
+                    <h5>WhatsApp: +55 (11) 3003-1999</h5>
+                    <h5>E-mail: artie.sptech@gmail.com</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>
+    function cadastrar() {
+        aguardar();
+
+        //Recupere o valor da nova input pelo nome do id
+        // Agora vá para o método fetch logo abaixo
+        var nomeVar = nome_input.value;
+        var fkGeneroVar = slt_genero.value
+        var emailVar = email_input.value;
+        var senhaVar = senha_input.value;
+        var confirmacaoSenhaVar = confirmacao_senha_input.value;
+        
+
+        if (nomeVar == "" || fkGeneroVar == 0 || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" ) {
+            
+
+            finalizarAguardar();
+            return false;
+        }
+        else {
+            setInterval(sumirMensagem, 5000)
+        }
+
+        // Enviando o valor da nova input
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                // crie um atributo que recebe o valor recuperado aqui
+                // Agora vá para o arquivo routes/usuario.js
+                nomeServer: nomeVar,
+                fkGeneroServer: fkGeneroVar,
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+            
+
+                setTimeout(() => {
+                    window.location = "login.html";
+                }, "2000")
+
+                limparFormulario();
+                finalizarAguardar();
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            finalizarAguardar();
+        });
+
+        return false;
+    }
+
+    function sumirMensagem() {
+        
+    }
+
+    
+
+</script>

@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    background-color: #000000;
+}
+
+.header {
+    background-color:rgba(0, 0, 0, 1 );
+    height: 10vh;
+    padding: 1vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+}
+
+.conteiner {
+    color: #83c6d3;
+    display: flex;
+    justify-content: center;
+    margin-left: 0vw;
+    font-weight: bold;
+}
+
+.conteiner h1{
+    font-weight: normal;
+    font-family: 'Rubik';
+    color: #EFAF30;
+    height: 4vh;
+    font-size: 7vh;
+    margin-left: 1vw;
+    width: 20vw;
+    margin-bottom: 8vh;
+}
+
+ul a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.header img{
+    height: 13vh;
+    margin-left: 10vw;
+    margin-right: 18vw;
+}
+.logo {
+    margin-top: 1vh;
+    justify-content: baseline;
+}
+
+.conteiner ul {
+    font-family:'Quicksand', tahoma, sans-serif;
+    display: flex;
+    width: 60vw;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 2vh;
+    margin-bottom: 0.5vw;
+    
+}
+
+.header .conteiner {
+    justify-content: center;
+    align-items: center;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('Quicksand-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Rubik';
+    src: url('RubikGlitch-Regular.ttf') format('truetype');
+  }
+
+  
