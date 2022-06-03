@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/styleLogin.css">
     <link rel="stylesheet" href="css/styleFooter.css">
     <link rel="stylesheet" href="css/styleHeader.css">
+    <script src="./js/funcoes.js"></script>
 </head>
 <body>
     <div class="header">
@@ -17,7 +18,7 @@
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="listas.html">LISTAS</a></li>
-                <li><a>SOBRE</a></li>
+                <li><a href="sobre.html">SOBRE</a></li>
                 <li>|</li>
                 <li><a href="cadastro.html">CADASTRO</a></li>
                 <li><a href="login.html">LOGIN</a></li>
@@ -120,7 +121,7 @@
                     sessionStorage.ID_USUARIO = json.id;
 
                     setTimeout(function () {
-                        window.location = "ALTERE AQUI";
+                        window.location = "index.html";
                     }, 1000); // apenas para exibir o loading
 
                 });

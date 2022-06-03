@@ -1,9 +1,96 @@
-.banner {
-    height: 120vh;
+body{
+    background-color: #11173f;
 }
-.banner {
-    margin-top: 0vh;
+.container__pai {
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    min-width: 280px;
+    max-width: 1920px;
+    width: 70%;
+    /* background-color: pink; */
+    margin-left: 24%;
 }
-.imagem_fundo {
-    background-image: url('1.jpg');
+.info_text{
+
+    color: #000000;
+    margin-bottom: 130vh;
+    text-align: center;
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: row; */
+    margin-right: 240px;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px;
+  margin-top: 220px;
+
+
+}
+
+.info_text p {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+}
+
+.container-artigo {
+background-image: url(https://hbomax-images.warnermediacdn.com/images/GXmmNFAzEJyLCHAEAACDB/tileburnedin?size=1280x720&partner=hbomaxcom&v=8af1ca789e23bfe33ad229f83357bd02&language=pt-br&host=art-gallery.api.hbo.com&w=Infinity);
+background-size: cover;
+width: 70%;
+height: 100%;
+max-width: 620px;
+margin-left: 37px;
+}
+
+.imagem1  img{
+display: flex;
+width: 620px;
+height: 270px;
+min-width: 280px;
+max-width: 1920px;
+/* margin-bottom: 15px;  */
+
+}
+
+.texto__home {
+    color:black;
+    font-size: 25px;
+    margin-left: 31%;
+    width: 400px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    
+}
+footer{
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    .rodape {
+        height: 10vh;
+        justify-content: space-evenly;
+        font-size: 18px;
+    }
+    .escritarodape {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2vh;
+        align-items: baseline;
+        color: #83c6d3;
+    }
+    .escritarodape h2{
+        font-size: 4vh;
+    }
+    .escritarodape h5{
+        font-size: 2vh;
+    }
+    
+
+.header{
+    background-color: blue;
 }
