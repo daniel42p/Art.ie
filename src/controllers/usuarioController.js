@@ -63,7 +63,7 @@ function entrar(req, res) {
 function cadastrar(req, res) {
     // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
     var nome = req.body.nomeServer;
-    var genero = req.body.generoServer;
+    var fkGenero = req.body.fkGeneroServer;
     var email = req.body.emailServer;
     var senha = req.body.senhaServer;
     
@@ -71,7 +71,7 @@ function cadastrar(req, res) {
     // Faça as validações dos valores
     if (nome == undefined) {
         res.status(400).send("Seu nome está undefined!");
-    } if (fkGenero == undefined) {
+    } if (fkGenero == undefined || fkGenero == 0) {
         res.status(400).send("Seu genero está undefined!");
     } else if (email == undefined) {
         res.status(400).send("Seu email está undefined!");
