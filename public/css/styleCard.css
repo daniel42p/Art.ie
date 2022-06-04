@@ -1,3 +1,40 @@
-.content {
-    
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.contentCard{
+    font-family: "Roboto", sans-serif;
+}
+
+.contentCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 2px 18px #2226546b;
+    width: 350px;
+}
+
+.mediaCard {
+    background: url("https://internacionaldaamazoniacom.files.wordpress.com/2021/04/hunger-games.jpg") center/cover;
+    height: 400px;
+    width: 100%;
+}
+
+.title{
+    color: #2b3d59;
+}
+
+.topCard {
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.bottomCard{
+    padding: 20px;
 }

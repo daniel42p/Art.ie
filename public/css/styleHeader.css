@@ -36,6 +36,10 @@ ul a {
     color: #ffffff;
 }
 
+ul a:hover {
+    background-color: #83c6d3;
+}
+
 .header img{
     height: 13vh;
     margin-left: 10vw;
@@ -54,7 +58,7 @@ ul a {
     list-style: none;
     font-size: 2vh;
     margin-bottom: 0.5vw;
-    
+    position: relative;
 }
 
 .header .conteiner {
@@ -72,4 +76,21 @@ ul a {
     src: url('RubikGlitch-Regular.ttf') format('truetype');
   }
 
-  
+.conteiner ul ul {
+    display: none;
+    left: 1;
+    position: absolute;
+}
+
+.conteiner ul li:hover ul {
+    display: block;
+}
+
+.conteiner ul ul {
+    width: 150px;
+}
+
+.conteiner ul ul li a{
+    display: block;
+}
+

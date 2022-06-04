@@ -29,13 +29,10 @@ ALTER TABLE Usuario ADD FOREIGN KEY (fkGenero) REFERENCES genero(idGenero);
 
 insert into genero values
 (1, 'Ação'),
-(2, 'Aventura'),
-(3, 'Comédia'),
-(4, 'Fantasia'),
-(5, 'Ficção Científica'),
-(6, 'Romance'),
-(7, 'Suspense'),
-(8, 'Terror');
+(2, 'Fantasia'),
+(3, 'Ficção Científica'),
+(4, 'Suspense'),
+(5, 'Terror');
 
 /* para sql server - remoto - produção */
 

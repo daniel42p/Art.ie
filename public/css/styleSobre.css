@@ -11,6 +11,8 @@ body{
     width: 70%;
     /* background-color: pink; */
     margin-left: 24%;
+    background: url(https://rollingstone.uol.com.br/media/uploads/robertdeniro-taxidriver-divulgacao.jpg) center/cover;
+
 }
 .info_text{
 
@@ -37,7 +39,6 @@ font-size: 18px;
 }
 
 .container-artigo {
-background-image: url(https://hbomax-images.warnermediacdn.com/images/GXmmNFAzEJyLCHAEAACDB/tileburnedin?size=1280x720&partner=hbomaxcom&v=8af1ca789e23bfe33ad229f83357bd02&language=pt-br&host=art-gallery.api.hbo.com&w=Infinity);
 background-size: cover;
 width: 70%;
 height: 100%;
@@ -91,6 +92,4 @@ footer{
     }
     
 
-.header{
-    background-color: blue;
-}
+
