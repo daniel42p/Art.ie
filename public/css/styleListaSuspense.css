@@ -99,12 +99,12 @@ input {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 .contentCard1{
-    font-family: "Roboto", sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 
 .contentCard1 .card {
-    background: #f5b349;
+    background: #8cd2c5;
     border-radius: 10px;
     box-shadow: 0px 2px 18px #2226546b;
     width: 300px;
@@ -112,7 +112,7 @@ input {
 }
 
 .contentCard1 .mediaCard {
-    background: url("https://internacionaldaamazoniacom.files.wordpress.com/2021/04/hunger-games.jpg") center/cover;
+    background: url("memento.png") center/cover;
     height: 400px;
     width: 100%;
 }
@@ -130,15 +130,27 @@ input {
     padding: 20px;
 }
 
+.contentCard1:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+  .contentCard1 {
+  
+  
+    transition: 0.5s ease;
+    cursor: pointer;
+    
+  }
+
 /* card2* */
 
 .contentCard2{
-    font-family: "Roboto", sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 
 .contentCard2 .card {
-    background: #f5b349;
+    background: #8cd2c5;
     border-radius: 10px;
     box-shadow: 0px 2px 18px #2226546b;
     width: 300px;
@@ -146,7 +158,7 @@ input {
 }
 
 .contentCard2 .mediaCard {
-    background: url("https://internacionaldaamazoniacom.files.wordpress.com/2021/04/hunger-games.jpg") center/cover;
+    background: url("o\ abutro.jpg") center/cover;
     height: 400px;
     width: 100%;
 }
@@ -164,15 +176,27 @@ input {
     padding: 20px;
 }
 
+.contentCard2:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+  .contentCard2 {
+  
+  
+    transition: 0.5s ease;
+    cursor: pointer;
+    
+  }
+
 /* card3 */
 
 .contentCard3{
-    font-family: "Roboto", sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 
 .contentCard3 .card {
-    background: #f5b349;
+    background: #8cd2c5;
     border-radius: 10px;
     box-shadow: 0px 2px 18px #2226546b;
     width: 300px;
@@ -180,7 +204,7 @@ input {
 }
 
 .contentCard3 .mediaCard {
-    background: url("https://internacionaldaamazoniacom.files.wordpress.com/2021/04/hunger-games.jpg") center/cover;
+    background: url("parasita.jpg") center/cover;
     height: 400px;
     width: 100%;
 }
@@ -198,15 +222,27 @@ input {
     padding: 20px;
 }
 
+.contentCard3:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+  .contentCard3 {
+  
+  
+    transition: 0.5s ease;
+    cursor: pointer;
+    
+  }
+
 /* card4 */
 
 .contentCard4{
-    font-family: "Roboto", sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 
 .contentCard4 .card {
-    background: #f5b349;
+    background: #8cd2c5;
     border-radius: 10px;
     box-shadow: 0px 2px 18px #2226546b;
     width: 300px;
@@ -214,7 +250,7 @@ input {
 }
 
 .contentCard4 .mediaCard {
-    background: url("https://internacionaldaamazoniacom.files.wordpress.com/2021/04/hunger-games.jpg") center/cover;
+    background: url("Silence_of_the_lambs.png") center/cover;
     height: 400px;
     width: 100%;
 }
@@ -232,15 +268,27 @@ input {
     padding: 20px;
 }
 
+.contentCard4:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+  .contentCard4 {
+  
+  
+    transition: 0.5s ease;
+    cursor: pointer;
+    
+  }
+
 /* card5 */
 
 .contentCard5{
-    font-family: "Roboto", sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 
 .contentCard5 .card {
-    background: #f5b349;
+    background: #8cd2c5;
     border-radius: 10px;
     box-shadow: 0px 2px 18px #2226546b;
     width: 300px;
@@ -248,7 +296,7 @@ input {
 }
 
 .contentCard5 .mediaCard {
-    background: url("https://internacionaldaamazoniacom.files.wordpress.com/2021/04/hunger-games.jpg") center/cover;
+    background: url("suspeitor.jpg") center/cover;
     height: 400px;
     width: 100%;
 }
@@ -266,15 +314,27 @@ input {
     padding: 20px;
 }
 
+.contentCard5:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+  .contentCard5 {
+  
+  
+    transition: 0.5s ease;
+    cursor: pointer;
+    
+  }
+
 /* card6 */
 
 .contentCard6{
-    font-family: "Roboto", sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 
 .contentCard6 .card {
-    background: #f5b349;
+    background: #8cd2c5;
     border-radius: 10px;
     box-shadow: 0px 2px 18px #2226546b;
     width: 300px;
@@ -282,7 +342,7 @@ input {
 }
 
 .contentCard6 .mediaCard {
-    background: url("https://internacionaldaamazoniacom.files.wordpress.com/2021/04/hunger-games.jpg") center/cover;
+    background: url("Zodiaco_2007.jpg") center/cover;
     height: 400px;
     width: 100%;
 }
@@ -299,3 +359,15 @@ input {
 .contentCard6 .bottomCard{
     padding: 20px;
 }
+
+.contentCard6:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+  .contentCard6 {
+  
+  
+    transition: 0.5s ease;
+    cursor: pointer;
+    
+  }
