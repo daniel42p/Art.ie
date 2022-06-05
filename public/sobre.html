@@ -32,45 +32,27 @@
             </ul>
         </div>
     </div>
-    <div class="container__pai">
-        
-    
-        <div class="container-artigo">
-            <div class="texto__home">
-                
-                    <p>ESWC 2006</p>
-                    <!-- <img  src="https://hbomax-images.warnermediacdn.com/images/GXmmNFAzEJyLCHAEAACDB/tileburnedin?size=1280x720&partner=hbomaxcom&v
-                        =8af1ca789e23bfe33ad229f83357bd02&language=pt-br&host=art-gallery.api.hbo.com&w=Infinity" alt=""> -->
-            </div>
+    <div class="container">
+        <div class="container__pai">
+            <p>SOBRE</p>
+        </div>
+        <div class="texto">
+            <button onclick="sobre()" class="botao" id="botao">O Puro Cinema</button>
             <div class="info_text"> 
-                <p>Além de ter sido a segunda competição que mais premiou na história de Counter-Strike, a Electronic Sports World Cup 2006 foi o primeiro título mundial de uma equipe brasileira no game.<br> A MIBR de KIKO, cogu e nak, desta vez reforçada com as chegadas de Lincoln "fnx" Lau e Bruno "bruno" Ono, deixou diversos favoritos para trás e sacramentou o triunfo em final contra a Fnatic.</p>
+                <div id="texto"></div>
             </div>
         </div>
     </div>
-    
-    
-    
-    
-    <!-- <footer>
-        <div class="rodape">
-            
-            <div class="escritarodape">
-                <div class="endereço">
-                    <h2>Endereço</h2>
-                    <h5>ART.IE</h5>
-                    <h5>Rua Haddock Lobo, 595</h5>
-                    <h5>Jardim Paulista - São Paulo SP</h5>
-                    <h5>CEP 05001-200</h5>
-                </div>
-
-                <div class="contato">
-                    <h2>Contato</h2>
-                    <h5>Telefone: 9999-9999</h5>
-                    <h5>WhatsApp: +55 (11) 3003-1999</h5>
-                    <h5>E-mail: artie.sptech@gmail.com</h5>
-                </div>
-            </div>
-        </div>
-    </footer> -->
 </body>
 </html>
+<script>
+    vt_texto = ['O que é o cinema? Bom pode ter varios signifados para cada um. Para uns o cinema é como um meio de entretenimento, para outros como uma propria filosofia de vida.', 'Os filmes transmitem mensagens onde cada espectador irá ter uma interpretação diferente do tema abordado ou da mensagem transcrita.', 'E como é transmitido essas mensagens para o espectador?', 'Bom depende de como o diretor quer transmiti-la, podendo ser pela paleta de cores das cenas, dialogos onde pode haver metáforas neles, o jogo de cameras presente nas cenas entre varios outros simbolos cinematográficos.', 'Um exemplo seria no filme Coringa (2019) onde em uma das cenas mais icônicas do filme, o Coringa esta descendo uma escadaria, a filmagem é feita de cima para baixo onde mostra o personagem dançando e aparentemente realizado consigo mesmo. Esta cena mostra como o personagem vai caindo em sua índole, descendo na vida, porém em contra partida, ele dança, mostrando que esta gostando do caminho que está indo. Essa concepção da cena passou batido para muitos espectadores por não ser clara de ver a priori.', 'Contudo o cinema não seria somente um meio de entretenimento, mas também algo em que você posso tirar uma reflexão de vida de qualquer filme.', 'O Art.ie esta aqui para aqueles apaixonados por filmes que buscam dicas de seus proximos filmes, onde são recomendados filmes em que será possivel tirar alguma reflexão deles, onde seu tempo assistindo, não será em vão.','Continue consumindo cinema, continue refletindo sobre os filmes, continue se entretendo com longas metragem. Art.ie sempre estará a sua disposição.']
+
+    function sobre(params) {
+        botao.style.display = 'none'
+        for (let index = 0; index < vt_texto.length; index++) {
+            texto.innerHTML += `<br>${vt_texto[index]}`
+            
+        }
+    }
+</script>

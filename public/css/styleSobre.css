@@ -1,72 +1,71 @@
 body{
     background-color: #11173f;
 }
-.container__pai {
-    margin-right: auto;
+
+
+.container{
     display: flex;
     flex-direction: column;
-    height: 350px;
-    min-width: 280px;
-    max-width: 1920px;
-    width: 70%;
+    height: 125vh;
+}
+.container__pai {
+    height: 35vh;
+    width:100%;
     /* background-color: pink; */
-    margin-left: 24%;
-    background: url(https://rollingstone.uol.com.br/media/uploads/robertdeniro-taxidriver-divulgacao.jpg) center/cover;
-
+    background-size: cover;
+    background: url(teste.jpg) center/cover;
+    align-items: center;
 }
+
+.texto{
+    margin-top: 5vh;
+}
+
 .info_text{
-
-    color: #000000;
-    margin-bottom: 130vh;
-    text-align: center;
-    width: 100%;
-    /* display: flex;
-    justify-content: center;
-    flex-direction: row; */
-    margin-right: 240px;
-  background-color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  border-radius: 5px;
-  margin-top: 220px;
-
+    margin-left: 30vw;
+    margin-right: 30vw;
+    font-size: 20px;
+    color: white;
+    font-family: 'Quicksand';
 
 }
 
-.info_text p {
-margin: 0;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 18px;
+.container__pai p{
+    display: flex; justify-content: center;
+    margin-top: 15vh;
+    font-size: 60px;
+    color: white;
+    font-family: "Quicksand";
+    letter-spacing: 7px;
 }
 
-.container-artigo {
-background-size: cover;
-width: 70%;
-height: 100%;
-max-width: 620px;
-margin-left: 37px;
+
+.botao {
+    width: 20vh;
+    height: 5vh;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #8cd2c5;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #16e6b273;
+
 }
 
-.imagem1  img{
-display: flex;
-width: 620px;
-height: 270px;
-min-width: 280px;
-max-width: 1920px;
-/* margin-bottom: 15px;  */
-
-}
-
-.texto__home {
-    color:black;
-    font-size: 25px;
-    margin-left: 31%;
-    width: 400px;
-    margin-top: 30px;
+.texto {
     display: flex;
-    flex-direction: row;
-    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
-footer{
+
+
+/*footer{
     height: 5vh;
     display: flex;
     flex-direction: column;
@@ -90,6 +89,7 @@ footer{
     .escritarodape h5{
         font-size: 2vh;
     }
+    */
     
 
 

@@ -112,7 +112,7 @@ input {
 }
 
 .contentCard1 .mediaCard {
-    background: url("memento.png") center/cover;
+    background: url("herditario.jpg") center/cover;
     height: 400px;
     width: 100%;
 }
@@ -158,7 +158,7 @@ input {
 }
 
 .contentCard2 .mediaCard {
-    background: url("o\ abutro.jpg") center/cover;
+    background: url("midsommar.jpg") center/cover;
     height: 400px;
     width: 100%;
 }
@@ -204,7 +204,7 @@ input {
 }
 
 .contentCard3 .mediaCard {
-    background: url("parasita.jpg") center/cover;
+    background: url("corra.jpg") center/cover;
     height: 400px;
     width: 100%;
 }
@@ -250,7 +250,7 @@ input {
 }
 
 .contentCard4 .mediaCard {
-    background: url("Silence_of_the_lambs.png") center/cover;
+    background: url("nos.jpg") center/cover;
     height: 400px;
     width: 100%;
 }
@@ -296,7 +296,7 @@ input {
 }
 
 .contentCard5 .mediaCard {
-    background: url("suspeitor.jpg") center/cover;
+    background: url("bruxa.jpg") center/cover;
     height: 400px;
     width: 100%;
 }
@@ -342,7 +342,7 @@ input {
 }
 
 .contentCard6 .mediaCard {
-    background: url("Zodiaco_2007.jpg") center/cover;
+    background: url("farol.jpg") center/cover;
     height: 400px;
     width: 100%;
 }
